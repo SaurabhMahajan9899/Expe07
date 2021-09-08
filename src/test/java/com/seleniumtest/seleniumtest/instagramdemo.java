@@ -8,15 +8,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 
-	public class googledemo {
+	public class instagramdemo {
 		private WebDriver driver;
 
 		@Test(priority=0) 
 		public void testJbkTitle() {
-		    driver.get("http://www.google.com"); 
+		    driver.get("http://www.instagram.com"); 
 		    String title = driver.getTitle(); 
 		    System.out.println(title);
-		    Assert.assertEquals(title,"Google");
+		    Assert.assertEquals(title,"Instagram");
 		   
 		}
 
