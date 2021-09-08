@@ -11,13 +11,13 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class flipkartdemo {
+public class amazondemo {
 
 		private WebDriver driver;
 
 		@Test(priority = 0)
 		public void testJbkTitle() {
-			driver.get("https://www.flipkart.in");
+			driver.get("https://www.amazon.in");
 			String title = driver.getTitle();
 			System.out.println(title);
 			Assert.assertEquals(title,
