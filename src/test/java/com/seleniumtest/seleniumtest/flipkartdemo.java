@@ -11,13 +11,13 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class amazondemo {
+public class flipkartdemo {
 
 		private WebDriver driver;
 
 		@Test(priority = 0)
 		public void testJbkTitle() {
-			driver.get("https://www.amazon.in");
+			driver.get("https://www.flipkart.in");
 			String title = driver.getTitle();
 			System.out.println(title);
 			Assert.assertEquals(title,
@@ -29,7 +29,7 @@ public class amazondemo {
 		public void testJbkTitleInvalid() {
 			driver.manage().window().maximize();			
 			WebElement SearchBox = driver.findElement(By.id("twotabsearchtextbox"));
-			SearchBox.sendKeys("Hp Laptop");
+			SearchBox.sendKeys("Lenovo Laptops");
 
 		}
 
